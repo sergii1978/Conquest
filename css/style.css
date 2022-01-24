@@ -258,9 +258,28 @@ header {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+.form input, .form textarea {
+  padding: 11px 15px;
+  color: #323232;
+  border: 1px solid #d3d3d2;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.form input::placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.73;
+}
+
 .search-form {
   display: none;
   padding: 20px 15px;
+}
+
+.search-form input {
+  min-width: 314px;
 }
 
 .user-search:hover .search-form {
