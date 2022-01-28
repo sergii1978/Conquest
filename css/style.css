@@ -9,9 +9,11 @@ html {
 body{
   max-width: 1440px;
   margin: 0 auto;
+  padding-top: 26px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-display: swap;
   overflow-wrap: break-word;
+  color: #1B1A17;
 }
 
 .wrapper {
@@ -68,7 +70,9 @@ a:focus, a:link, a:active {
 
 /* header */
 header {
-  padding-top: 56px;
+  /* padding-top: 56px; */
+  margin-bottom: 35px;
+  background-color: #fdfdfb;
 }
 
 .header-nav {
@@ -104,7 +108,7 @@ header {
 .nav-link {
   display: block;
   position: relative;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -317,10 +321,14 @@ header {
     border-radius: 50%;
 }
 
-
+/* main */
 /* section promo */
 .promo {
   position: relative;
+  background-color: #fdfdfb;
+  background-image: url("../img/promo_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .promo .container {
@@ -330,32 +338,13 @@ header {
 }
 
 .promo-text {
-  max-width: 541px;
+  max-width: 410px;
   flex-shrink: 0;
-  margin: 0 auto;
+  margin: 0 8px;
+  padding-left: 60px;
   padding-top: 115px;
 }
 
-h1 {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 66px;
-  line-height: 78px;
-}
-
-h1 span {
-  color: #FF7A50;
-}
-
-.promo-text p {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  text-transform: capitalize;
-}
 
 .promo-list {
   display: flex;
@@ -383,7 +372,92 @@ h1 span {
 }
 
 .promo-img {
-  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 670px;
   height: auto;
-  margin: 0 auto;
+  margin: 0 8px;
+  /* background-image: url('../img/promo_watch.png');
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.promo-img__price,.promo-img__dimensions {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.promo-img__price {
+  position: absolute;
+  align-self: flex-start;
+}
+
+.promo-img__currency {
+  position: relative;
+  font-family: "Prata";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.promo-img__currency::after {
+  position: absolute;
+  content: "";
+  bottom: 7px;
+  left: 20px;
+  width: 50px;
+  height: 2px;
+  background-image: url('../img/svg/line.svg');
+}
+
+.promo-img__watch {
+  /* position: absolute; */
+  max-width: 100%;
+  /* left: 10px; */
+  flex-shrink: 0;
+}
+
+.promo-img__dimensions {
+  top: 77px;
+  position: absolute;
+  bottom: 208px;
+  left: 381px;
+}
+
+.promo-img__size {
+  position: relative;
+}
+
+.promo-img__size::before {
+  position: absolute;
+  content: "";
+  bottom: 7px;
+  left: -56px;
+  width: 50px;
+  height: 2px;
+  background-image: url('../img/svg/line.svg');
+}
+
+.promo-text__heading {
+  position: relative;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 60px;
+}
+
+.promo-text__heading::before {
+  position: absolute;
+  content: "";
+  bottom: 24px;
+  left: -66px;
+  width: 50px;
+  height: 2px;
+  background-image: url('../img/svg/line.svg');
 }
