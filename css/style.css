@@ -10,9 +10,12 @@ body{
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 26px;
+
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-display: swap;
+
   overflow-wrap: break-word;
+
   color: #1B1A17;
 }
 
@@ -42,7 +45,7 @@ body{
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -100,14 +103,15 @@ header {
 }
 
 .nav-list {
-  flex-basis: 422px;
   display: flex;
+  flex-basis: 422px;
   justify-content: space-between;
 }
 
 .nav-link {
   display: block;
   position: relative;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -176,8 +180,10 @@ header {
 
 .btn-cart {
   position: relative;
+
   width: 19px;
   height: 18px;
+
   border: none;
   background-color: transparent;
   color: #363853;
@@ -358,7 +364,7 @@ header {
   z-index: 0;
 }
 
-.promo-img__price,.promo-img__dimensions {
+.promo-img-price,.promo-img-dimensions {
   font-family: "Prata";
   font-weight: 400;
   font-size: 16px;
@@ -368,14 +374,14 @@ header {
   z-index: 2;
 }
 
-.promo-img__price {
+.promo-img-price {
   /* position: absolute; */
   padding-top: 18%;
 
   align-self: flex-start;
 }
 
-.promo-img__currency {
+.promo-img-currency {
   position: relative;
   font-family: "Prata";
   font-weight: 300;
@@ -384,7 +390,7 @@ header {
   text-align: center;
 }
 
-.promo-img__currency::after {
+.promo-img-currency::after {
   position: absolute;
   content: "";
   bottom: 7px;
@@ -394,7 +400,7 @@ header {
   background-image: url('../img/svg/line.svg');
 }
 
-.promo-img__watch {
+.promo-img-watch {
   /* position: absolute; */
   max-width: 100%;
   height: auto;
@@ -403,7 +409,7 @@ header {
   z-index: 1;
 }
 
-.promo-img__dimensions {
+.promo-img-dimensions {
   /* top: 77px;
   position: absolute;
   bottom: 208px;
@@ -413,11 +419,11 @@ header {
   align-self: flex-end;
 }
 
-.promo-img__size {
+.promo-img-size {
   position: relative;
 }
 
-.promo-img__size::before {
+.promo-img-size::before {
   position: absolute;
   content: "";
   bottom: 7px;
@@ -439,7 +445,7 @@ header {
   z-index: 2;
 }
 
-.promo-text__heading {
+.promo-text-heading {
   position: relative;
 
   margin-bottom: 27px;
@@ -451,7 +457,7 @@ header {
   line-height: 60px;
 }
 
-.promo-text__heading::before {
+.promo-text-heading::before {
   position: absolute;
   content: "";
   bottom: 24px;
@@ -461,7 +467,7 @@ header {
   background-image: url('../img/svg/line.svg');
 }
 
-.promo-text__title {
+.promo-text-title {
   margin-bottom: 40px;
 
   font-family: "Playfair Display";
@@ -471,7 +477,7 @@ header {
   line-height: 40px;
 }
 
-.promo-text__description {
+.promo-text-description {
   width: 260px;
 
   margin-bottom: 40px;
@@ -507,10 +513,84 @@ header {
   color: #FFFFFF;
 }
 
-.btn-link__black {
+.btn-link-black {
   background: #444240;
 }
 
-.btn-link__brown {
+.btn-link-brown {
   background: #D4B098;
+}
+
+
+/* section models */
+.models h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+
+  color: #1B1A17;
+}
+
+.catalog-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: end;
+
+  color: #444240;
+}
+
+.models-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -40px;
+}
+
+.models-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  max-width: 370px;
+  min-width: 320px;
+  height: auto;
+
+  margin: 25px auto;
+
+  background-color: #FDFDFB;
+  background-size: cover;
+  text-align: start;
+}
+
+.model-img-wrapper {
+  width: 313px;
+  height: auto;
+
+  margin: 0 auto;
+
+  background-image: url('../img/card_bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.model-img {
+  max-width: 313px;
+  height: auto;
+}
+
+.model-catalog-link {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: start;
+
+  color: #1B1A17;
 }
