@@ -37,6 +37,10 @@
 
         <!--Styles-->
         <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
         <link rel="stylesheet" href="css/svg.css">
         <link rel="stylesheet" href="css/media.css">
         <link rel="stylesheet" href="css/style.css">
@@ -48,8 +52,8 @@
             <div class="container">
                 <h1 class="visually-hidden">Коллекция часов Conquest</h1>
                 <nav class="header-nav">
-                  <a href="#" class="logo-link" lang="en" title="На главную">
-                    <img src="img/svg/logo.svg" width="20" height="20" alt="Логотип">
+                  <a href="/index.html" class="logo-link logo-link__header" lang="en" title="На главную">
+                    <img src="img/svg/logo-brown.svg" width="20" height="20" alt="Логотип">
                     CONQUEST
                     <span class="visually-hidden">На главную</span>
                   </a>
@@ -130,9 +134,8 @@
             </section>
 
             <section class="models">
-                <h2 class="visually-hidden">Каталог часов</h2>
                 <div class="container">
-                    <h3 clas="models-catalog">Популярные модели</h3>
+                    <h2 class="models-catalog">Популярные модели</h2>
                     <a href="" class="catalog-link">Смотреть все</a>
                     <div class="models-cards-wrapper">
                         <div class="models-card">
@@ -170,49 +173,85 @@
             </section>
 
             <section class="quality">
-                <div class="container">
-                    <div class="quality-slider-wrapper"></div>
+                <h2 class="visually-hidden">Преимущество</h2>
+                <div class="container-small">
+                    <div class="quality-slider-wrapper owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="img/photo-banner.jpg" width="521" height="414" alt="баннер">
+                        </div>
+                        <div class="item">
+                            <img src="img/photo-banner.jpg" width="521" height="414" alt="баннер">
+                        </div>
+                        <div class="item">
+                            <img src="img/photo-banner.jpg" width="521" height="414" alt="баннер">
+                        </div>
+                        <div class="item">
+                            <img src="img/photo-banner.jpg" width="521" height="414" alt="баннер">
+                        </div>
+                        <div class="item">
+                            <img src="img/photo-banner.jpg" width="521" height="414" alt="баннер">
+                        </div>
+                        <div class="item">
+                            <img src="img/photo-banner.jpg" width="521" height="414" alt="баннер">
+                        </div>
+                    </div>
                     <div class="quality-text">
-                        <h2>Подлинное качество</h>
+                        <h3>Подлинное качество</h3>
                         <p>Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
-                        <a href="#" class="quality-link btn-link btn-link__black">СМОТРЕТЬ КАТАЛОГ</a>
+                        <a href="#" class="quality-link btn-link btn-link__brown">СМОТРЕТЬ КАТАЛОГ</a>
                     </div>
                 </div>
             </section>
 
             <section class="action">
-                <div class="wrapper">
+                <div class="container">
+                    <h2 class="visually-hidden">Подписка на новости</h2>
                     <div class="action-text">
-                        <h3></h3>
-                        <p></p>
+                        <h3>Следите за нашими новостями</h3>
+                        <p>Подписывайтесь на <span><a class="email-link" href="mailto:info@conquest.watch.ru">@conquest_watch</a></span> в соцсетях и узнавайте о новинках и акциях первыми.</p>
                         <ul class="social-list">
                             <li class="social-item">
-                                <a href="#" class="social-link">
-                                    <svg class="icon">
+                                <a href="#" class="social-link" aria-label="instagram">
+                                    <svg class="icon" width="22" height="22">
                                         <use xlink:href="img/svg/sprite-social.svg#instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a href="#" class="social-link">
-                                    <svg class="icon">
+                                <a href="#" class="social-link" aria-label="facebook">
+                                    <svg class="icon" width="12" height="22">
                                         <use xlink:href="img/svg/sprite-social.svg#facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a href="#" class="social-link">
-                                    <svg class="icon">
+                                <a href="#" class="social-link" aria-label="twitter">
+                                    <svg class="icon" width="22" height="17">
                                         <use xlink:href="img/svg/sprite-social.svg#twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="action-img">
-                        <img class="" src="" width="" height="" alt="">
-                        <img class="" src="" width="" height="" alt="">
-                        <img class="" src="" width="" height="" alt="">
+
+                    <div class="action-catalog">
+                        <ul class="catalog-list">
+                            <li class="catalog-item">
+                                <a href="#" class="action-catalog-link">
+                                    <img class="catalog-image" src="img/watch-water.jpg" width="242" height="228" alt="Часы в воде">
+                                </a>
+                            </li>
+                            <li class="catalog-item">
+                                <a href="#" class="action-catalog-link">
+                                    <img class="catalog-image" src="img/watch-hand.jpg" width="377" height="460" alt="Часы на руке">
+                                </a>
+                            </li>
+                            <li class="catalog-item">
+                                <a href="#" class="action-catalog-link">
+                                    <img class="catalog-image" src="img/watch-beauty.jpg" width="242" height="222" alt="Часы на земле">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -220,10 +259,62 @@
 
         <!-- footer -->
         <footer>
-
+            <div class="container">
+                <div class="contacts"> 
+                    <a href="/index.html" class="logo-link logo-link__footer" lang="en" title="На главную">
+                        <img src="img/svg/logo-white.svg" width="20" height="20" alt="Логотип">
+                        CONQUEST
+                        <span class="visually-hidden">На главную</span>
+                      </a>
+                    <ul class="conracts-list">
+                        <li>
+                            <a href="phone:8 (499) 450-47-97">8 (499) 450-47-97</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                <dl class="footer-nav">
+                    <div>
+                      <dt>о компании</dt>
+                      <dd>
+                        <ul class="nav-list">
+                          <li><a href="#">Наши магазины</a></li>
+                          <li><a href="#">Вакансии</a></li>
+                          <li><a href="#">Сертификаты</a></li>
+                          <li><a href="#">Отзывы</a></li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>покупателям</dt>
+                      <dd>
+                        <ul class="nav-list">
+                          <li><a href="#">Каталог товаров</a></li>
+                          <li><a href="#">Как заказать?</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Корпоративным клиентам</a></li>
+                        </ul>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt>оплата и доставка</dt>
+                      <dd>
+                        <ul class="nav-list">
+                          <li><a href="#">Способы оплаты</a></li>
+                          <li><a href="#">Время доставки</a></li>
+                          <li><a href="#">Гарантии и ремонт</a></li>
+                          <li><a href="#">Возврат и компенсация</a></li>
+                        </ul>
+                      </dd>
+                    </div>
+                  </dl>
+            </div>
         </footer>
 
         <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
